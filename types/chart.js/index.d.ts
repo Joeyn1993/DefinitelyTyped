@@ -193,6 +193,7 @@ declare namespace Chart {
         elements?: ChartElementsOptions;
         layout?: ChartLayoutOptions;
         scales?: ChartScales;
+        scale?: ChartScale;
         showLines?: boolean;
         spanGaps?: boolean;
         cutoutPercentage?: number;
@@ -487,6 +488,17 @@ declare namespace Chart {
     }
 
     interface ChartScales {
+        type?: ScaleType | string;
+        display?: boolean;
+        position?: PositionType | string;
+        gridLines?: GridLineOptions;
+        scaleLabel?: ScaleTitleOptions;
+        ticks?: TickOptions;
+        xAxes?: ChartXAxe[];
+        yAxes?: ChartYAxe[];
+    }
+    
+    interface ChartScale {
         type?: ScaleType | string;
         display?: boolean;
         position?: PositionType | string;
