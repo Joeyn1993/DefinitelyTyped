@@ -410,6 +410,7 @@ declare namespace Chart {
         reverse?: boolean;
         min?: any;
         max?: any;
+        stepSize?: number;
     }
     interface AngleLineOptions {
         display?: boolean;
